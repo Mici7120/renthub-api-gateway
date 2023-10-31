@@ -76,6 +76,6 @@ app.use('/chat', createProxyMiddleware({
 
 
 // Inicia el servidor
-app.listen(PORT, () => {
-  console.log(`El servidor está corriendo en el puerto ${PORT}`);
+app.listen(port, () => {
+  console.log(`El servidor está corriendo en el puerto ${port}`);
 });
