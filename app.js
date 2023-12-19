@@ -24,6 +24,15 @@ app.use('/chat', createProxyMiddleware({
     }
   }))
 
+// Ruta para el servicio de pagos
+app.use('/pagos', createProxyMiddleware({
+  target: config.pagosService.url,
+  changeOrigin: true,
+  pathRewrite: {
+    '^/pagos': ''
+  }
+}))
+
 
 // Inicia el servidor
 app.listen(port, () => {

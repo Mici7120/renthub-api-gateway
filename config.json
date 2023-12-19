@@ -2,8 +2,13 @@
   "usersService": {
     "url": "https://django-render-renthub-app.onrender.com"
   },
+
   "chatService": {
     "url": "https://renthub-chat-back.onrender.com"
+  },
+
+  "pagosService": {
+    "url": "https://pago-microservice.onrender.com"
   },
 
   "geolocationService": {
